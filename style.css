@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+#tudo {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+body {
+    margin-top: 37px;
+    background-image: linear-gradient(to bottom, rgb(82, 132, 245), rgb(210, 164, 252));
+    background-attachment: fixed;
+}
+
+#background {
+    width: 60%;
+    border: solid black 1px;
+    display: flex;
+
+}
+#background img {
+    width: 100%;
+}
+header {
+    background-color: rgb(84, 144, 255);   
+    width: 100%;
+    position: fixed;
+    top: 0;
+}
+footer {
+    position: fixed;
+    bottom: 0%;
+}
+
+#divRespostas {
+    width: 60%;
+    position: absolute;
+    border: 1px solid red;
+    top: 37.45px;
+}
