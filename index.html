@@ -6,24 +6,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="https://i.scdn.co/image/ab67616d0000b2738ddf564ad4c1bdf0cd9d605c" type="image/x-icon">
-    <script src="script.js"></script>
+    <script src="script.js" async></script>
     <title>Lua de Cristal</title>
 </head>
 <body>
+    <!-- documentos para o onClick abixo -->
+    <audio src="mineHurt.mp3" id="roblox" preload="auto"></audio>
+    <audio src="wasted.mp3" id="wasted_som" preload="auto"></audio>
+    <div id="wasted">
+        <div id="img_wasted_div">
+            <img id="wasted_img" src="https://cdn130.picsart.com/266964949005212.png" alt="wasted">
+        </div>
+    </div>
+    <!-- documentos para o onClick acima -->
+
     <div id="tudo">
         <div id="background"><img src="https://i.pinimg.com/originals/bf/f2/e5/bff2e57fd78227165eaa1937752e5d5b.gif" alt=""></div>
         <header>
-            <h1 id="pergunta">~~Informação da pergunta~~</h1>
+            <h1 id="pergunta">Quantos pães você comeu hoje?</h1>
         </header>
+
+        <img id="astronauta" src="astro_do_nauta2.png" alt="astronauta animação">
+
         <div id="divRespostas">
-            <div class="respostas" id="resposta1"></div>
-            <div class="respostas" id="resposta2"></div>
-            <div class="respostas" id="resposta3"></div>
-            <div class="respostas" id="resposta4"></div>
+                <div class="respostas" id="resposta1">
+                    <button class="opcao butao">Nenhum</button>
+                </div>
+
+                <div onclick="document.getElementById('wasted_som').play()" class="respostas" id="resposta2">
+                    <button class="opcao butao">1</button>
+                </div>
+
+                <div class="respostas" id="resposta3">
+                    <a class="opcao" href="index2.html">2</a>
+                </div>
+                <div onclick="document.getElementById('wasted_som2').play()" class="respostas" id="resposta4">
+                    <button class="opcao butao">3 ou mais
+                    </button>
+                </div>
         </div>
+
         <footer>
-            <h3 id="informacoes">~~Informações dos criadores~~<br>
-            por enquanto só eu '-'</h3>
+            <h3 id="informacoes">~~Nome dos criadores~~<br>
+            Henry Gois - Gabriel Lopes - Matheus Henrique - Rafael Ferraz - Lucas Aquino</h3>
         </footer>
     </div>
 </body>
