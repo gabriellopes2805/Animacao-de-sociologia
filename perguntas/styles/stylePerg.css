@@ -325,3 +325,22 @@ button {
   color: black;
 }
 
+#mutano {
+  position: absolute;
+
+  transform: rotateY(180deg);
+
+  width: 15%;
+
+  top: 10%;
+
+  right: 5%;
+
+  animation: mutas 3s ease-in-out 0s infinite alternate backwards;
+}
+
+@keyframes mutas {
+  from {
+    top: 60%;
+  }
+}

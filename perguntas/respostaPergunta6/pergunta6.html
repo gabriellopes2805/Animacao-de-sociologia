@@ -4,19 +4,19 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styleExp.css" />
+    <link rel="stylesheet" href="../styles/stylePerg.css" />
     <link
       rel="shortcut icon"
       href="https://i.scdn.co/image/ab67616d0000b2738ddf564ad4c1bdf0cd9d605c"
       type="image/x-icon"
     />
-    <script src="script.js" async></script>
+    <script src="../scriptExp/scriptPerg.js" defer></script>
     <title>Lua de Cristal</title>
   </head>
   <body>
     <!-- documentos para o onClick abixo -->
-    <audio src="mineHurt.mp3" id="roblox" preload="auto"></audio>
-    <audio src="wasted.mp3" id="wasted_som" preload="auto"></audio>
+    <audio src="../../assets/mineHurt.mp3" id="roblox" preload="auto"></audio>
+    <audio src="../../assets/wasted.mp3" id="wasted_som" preload="auto"></audio>
     <div id="wasted">
       <div id="img_wasted_div">
         <img
@@ -35,33 +35,43 @@
         />
       </div>
       <header>
-        <h1 id="pergunta">Quantos pães você comeu hoje?</h1>
+        <h1 id="pergunta">
+          Quais dos países abaixo são exemplos de sistemas presidencialistas e
+          parlamentaristas de coalizão?
+        </h1>
       </header>
       <img
         id="astronauta"
-        src="astro_do_nauta2.png"
+        src="../../assets/astro_do_nauta2.png"
         alt="astronauta animação"
       />
+      <!-- mutano aparecerá a partir do 4 -->
+
+      <img src="../../pixil-frame-0.png" alt="mutano" id="mutano" />
+
+      <!-- mutano acima -->
       <div id="divRespostas">
         <div class="respostas" id="resposta1">
-          <button class="opcao butao">Nenhum</button>
+          <button class="opcao butao">Brasil e China.</button>
         </div>
         <div
           onclick="document.getElementById('wasted_som').play()"
           class="respostas"
           id="resposta2"
         >
-          <button class="opcao butao">1</button>
+          <button class="opcao butao">Não existe.</button>
         </div>
         <div class="respostas" id="resposta3">
-          <a class="opcao" href="index2.html">2</a>
+          <a class="opcao" href="../../missoes/miss8/missao-8.html"
+            >Alemanha e India</a
+          >
         </div>
         <div
           onclick="document.getElementById('wasted_som2').play()"
           class="respostas"
           id="resposta4"
         >
-          <button class="opcao butao">3 ou mais</button>
+          <button class="opcao butao">Cuba e Noruega.</button>
         </div>
       </div>
       <footer>

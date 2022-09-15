@@ -175,3 +175,49 @@ nav {
   background-color: rgba(237, 138, 255, 0.45);
   color: black;
 }
+
+#exp {
+  overflow: hidden;
+
+  margin: 0 auto;
+
+  display: inline-block;
+
+  font-weight: normal;
+}
+
+#exp:after {
+  content: "";
+
+  display: inline-block;
+
+  background-color: transparent;
+
+  margin-left: 2px;
+
+  height: 25px;
+
+  width: 4px;
+
+  animation: cursor 0.4s infinite;
+}
+
+/* The typewriter cursor effect */
+
+@keyframes cursor {
+  0% {
+    opacity: 1;
+  }
+
+  49% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}

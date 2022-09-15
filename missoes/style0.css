@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@1,100&display=swap');
+body {
+    background-color: black;
+}
+#textBox {
+    width: 80%;
+    margin-left: 5px;
+}
+#missionNum {
+    font-weight: 400;
+}
+.text {
+    font-family: roboto;
+    color: white;
+    padding: 10px;
+}
+#text {
+    overflow: hidden;
+    margin: 0 auto;
+    display: inline-block;
+    font-weight: normal;
+    font-size: 170%;
+    line-height: 140%;
+  }
+  #text:after{
+    content: '';
+    display: inline-block;
+    background-color: transparent;
+    margin-left: 2px;
+    height: 25px;
+    width: 4px;
+    background-color: white;
+    animation: cursor 0.4s infinite;
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes cursor {
+    0% { opacity: 1; }
+      49% { opacity: 1; }
+      50% { opacity: 0; }
+      100% { opacity: 0; }
+  }
+
+  #continue {
+    position: absolute;
+    top: 0;
+    width: 99vw;
+    height: 100vh;
+  }
+  #continueLink {
+    background-color: transparent;
+    border-width: 92vh 49vw;
+    border-style: solid;
+    border-color: transparent;
+    cursor: context-menu;
+  }
+  #astro {
+    color: aqua;
+  }
+  #mutano {
+    color: red;
+  }
