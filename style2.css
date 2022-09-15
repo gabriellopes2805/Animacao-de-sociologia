@@ -27,10 +27,11 @@ body {
 }
 #planet {
   position: absolute;
-  width: 45%;
-  top: -20%;
-  left: -15%;
+  width: 35%;
+  top: 0;
+  left: 0;
   z-index: -2;
+  user-select: none;
 }
 header {
   width: 100%;
@@ -49,6 +50,7 @@ nav {
   font-size: 13px;
   text-align: center;
   width: fit-content;
+  user-select: none;
 }
 #ulNav {
   display: flex;
@@ -79,6 +81,7 @@ nav {
 }
 
 #main {
+  height: 80vh;
   width: 100%;
   display: flex;
   align-items: center;
@@ -87,12 +90,11 @@ nav {
 }
 #exp {
   width: 60%;
-  top: 50px;
-  min-height: 90.4vh;
+  height: fit-content;
   font-family: quicksand;
   background-color: rgba(207, 207, 207, 0.3);
   border: solid rgba(207, 207, 207, 0.01) 10px;
-  border-radius: 18px 18px 0 0;
+  border-radius: 18px;
   color: white;
 }
 #astroBoy {
@@ -102,8 +104,9 @@ nav {
   position: absolute;
   right: 5%;
   width: 15%;
-  z-index: -1;
+  z-index: 0;
   animation: astroNauto 4s ease-in-out 0s infinite normal;
+  user-select: none;
 }
 @keyframes astroNauto {
   0% {
@@ -123,4 +126,52 @@ nav {
   from {
     rotate: 360deg;
   }
+}
+#aniDeEntrada {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: lavinia 7s linear 0s 1 normal;
+  animation-fill-mode: backwards;
+  top: -10000px;
+}
+#cj {
+  width: 35%;
+  user-select: none;
+}
+@keyframes lavinia {
+  from {
+    top: 0;
+    opacity: 1;
+  }
+  to {
+    top: 0;
+    opacity: 0.5;
+  }
+}
+@media screen and (max-width: 700px) {
+  #exp {
+    font-size: 3vw;
+  }
+  nav {
+    font-size: 2.5vw;
+  }
+}
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background-color: rgba(99, 145, 253, 0.3);
+  box-shadow: inset 0 0 3px 0.1px white;
+}
+::-webkit-scrollbar-thumb {
+  background-color: rgb(163, 128, 196);
+  border-radius: 50px;
+}
+::selection {
+  background-color: rgba(237, 138, 255, 0.45);
+  color: black;
 }
